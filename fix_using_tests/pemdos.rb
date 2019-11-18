@@ -1,7 +1,11 @@
 def snake_it_up(string)
-  if string[0] == "s"
-  10 * "s" + string
-  else
-  string
-  end
+  return "ssssssssss" + string
+  # array = string.split
+  # if array[0] == "s"
+  #   10. times do
+  #     array.unshift("s")
+  #   end
+  # end
+  # return array.join(" ")
+  #
 end
