@@ -1,3 +1,4 @@
+require 'pry'
 class Person
   attr_accessor :name, :candy_lover
 
@@ -7,23 +8,24 @@ class Person
   end
 
   def tall?
-    true
+    return true
   end
 
   def basketball_player?
-    false
+    return false
   end
 
   def likes_candy?
-    true
+    return candy_lover
   end
 
   def ballin_candy_lover?
-    if @candy_lover == true
-      "Aw sweet, this cat loves them some candy!"
+    if likes_candy?    
+      return "Aw sweet, this cat loves them some candy!"
     else
       10.times do
-        "not a ballin candy lover"
+        return "not a ballin candy lover"
+      end
     end
   end
 end
